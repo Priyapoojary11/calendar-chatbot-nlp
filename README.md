@@ -27,7 +27,7 @@ A simple chatbot built with Flask + NLP that can schedule and query calendar eve
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 calendar-chatbot-nlp/
 |
@@ -42,9 +42,9 @@ calendar-chatbot-nlp/
 |    |-- chat.html    # Frontend UI
 
 
-## 💻 Setup Instructions
+##  Setup Instructions
 
-### 1. 📥 Clone the Repository
+### 1.  Clone the Repository
 
   VS Code Terminal ($Git Bash)
 
@@ -106,7 +106,7 @@ Bot will respond accordingly and save events in a local SQLite database.
             "id": 1
           }
   ### GET /api/events
-  
+
     - URL
         GET http://127.0.0.1:5000/api/events
 
