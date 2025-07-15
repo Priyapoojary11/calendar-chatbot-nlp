@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <link rel="stylesheet" href="static/styles.css">
+</head>
 <body>
-    <h1>Chatbot</h1>
-    <div id="chatlog"></div>
-    <input id="msg" placeholder="say something...">
-    <button onclick="send()">Send</button>
+    <div class="container">
+        <h1>Chatbot</h1>
+        <div id="chatlog"></div>
+        <input id="msg" placeholder="say something...">
+        <button onclick="send()">Send</button>
+    </div>
     <script>
     async function send(){
         const msg = document.getElementById("msg").value;
@@ -14,7 +19,7 @@
         body: JSON.stringify({message: msg})
         });
         const data = await res.json();
-        document.getElementById("chatlog").innerHTML += `<p><b>You:</b> ${msg}</p><p><b>Bot:</b> ${data.reply}</p>`;
+        document.getElementById("chatlog").innerHTML += `<p><b>👤You:</b> ${msg}</p><p><b>🤖 Bot:</b> ${data.reply}</p><br>`;
         document.getElementById("msg").value = '';
     }
     </script>

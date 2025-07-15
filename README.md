@@ -105,6 +105,7 @@ Bot will respond accordingly and save events in a local SQLite database.
             "status": "ok",
             "id": 1
           }
+          
   ### GET /api/events
 
     - URL
