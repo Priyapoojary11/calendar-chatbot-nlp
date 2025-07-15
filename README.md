@@ -38,6 +38,9 @@ calendar-chatbot-nlp/
 |-- nlp_utils.py   # NLP utilities for date parsing
 |-- requirements.txt
 |
+|-- static/
+|   |-- styles.css
+|
 |-- templates/
 |    |-- chat.html    # Frontend UI
 
@@ -105,7 +108,7 @@ Bot will respond accordingly and save events in a local SQLite database.
             "status": "ok",
             "id": 1
           }
-          
+
   ### GET /api/events
 
     - URL
